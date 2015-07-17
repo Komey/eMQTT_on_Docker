@@ -6,7 +6,7 @@ ADD . /home/file/
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y unzip
 
-RUN unzip /home/file/emqtt.zip
+RUN unzip /home/file/emqttd.zip
 
 
 EXPOSE 1883 

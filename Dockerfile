@@ -10,7 +10,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y unzip
 
 RUN unzip /home/file/emqttd.zip  -d /home/file/
 
-RUN cp -f /home/file/emqttd.config  /home/file/emqttd/etc
+RUN cp -f /home/file/emqttd.config  /home/file/emqttd/etc &&chmod +x /home/file/*.sh
 
 
 EXPOSE 1883 

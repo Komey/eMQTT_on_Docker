@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "Hi~~~ eMQTT Starting"
+echo "eMQTT Broker Starting"
 ./home/file/emqttd/bin/emqttd start
-
+echo "Done."
 
 if [ -f /.root_passwd_set ]; then
 	echo "Root password already set!"
@@ -25,3 +25,5 @@ echo " and enter the root password '$PASS' "
 echo ""
 echo "remember to change the above password !"
 echo "========================================================================"
+
+exec /usr/sbin/sshd -D

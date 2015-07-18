@@ -6,11 +6,11 @@ ADD . /home/file/
 
 RUN wget -O emqttd.zip http://emqtt.io/static/brokers/emqttd-ubuntu64-0.9.0-alpha-20150709.zip
 
+
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y unzip
 
-RUN unzip /home/file/emqttd.zip  -d /home/file/
 
-RUN cp -f /home/file/emqttd.config  /home/file/emqttd/etc &&chmod +x /home/file/*.sh
+RUN unzip emqttd.zip  -d /home/file/ && cp -f /home/file/emqttd.config  /home/file/emqttd/etc && chmod +x /home/file/*.sh
 
 
 EXPOSE 1883 

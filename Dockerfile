@@ -10,7 +10,7 @@ RUN wget -O emqttd.zip http://emqtt.io/static/brokers/emqttd-ubuntu64-0.9.0-alph
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y unzip
 
 
-RUN unzip emqttd.zip  -d /home/file/ && cp -f /home/file/emqttd.config  /home/file/emqttd/etc && chmod +x /home/file/*.sh  && rm /.root_passwd_set
+RUN unzip emqttd.zip  -d /home/file/ && cp -f /home/file/emqttd.config  /home/file/emqttd/etc && chmod +x /home/file/*.sh  && rm -f /.root_passwd_set
 
 
 EXPOSE 1883 

@@ -31,6 +31,7 @@ if [-f $MQTTD]; then
 		echo "eMQTT Broker console......"
 		./home/file/emqttd/bin/emqttd console
 	fi
+else
 	echo "eMQTT Broker normal......"
 	./home/file/emqttd/bin/emqttd start
 fi

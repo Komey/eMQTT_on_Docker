@@ -26,11 +26,9 @@ echo "========================================================================"
 echo "eMQTT Broker Starting"
 
 
-if [-f $MQTTD]; then
-	if [$MQTTD == "1"];then
-		echo "eMQTT Broker console......"
-		./home/file/emqttd/bin/emqttd console
-	fi
+if [$MQTTD == "1"]; then
+	echo "eMQTT Broker console......"
+	./home/file/emqttd/bin/emqttd console
 else
 	echo "eMQTT Broker normal......"
 	./home/file/emqttd/bin/emqttd start

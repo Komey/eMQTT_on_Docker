@@ -31,5 +31,5 @@ echo "eMQTT Broker Starting"
 
 
 echo "Done."
-
+/usr/bin/supervisord
 exec /usr/sbin/sshd -D

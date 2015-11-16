@@ -1,4 +1,4 @@
-FROM index.alauda.cn/alauda/ubuntu
+FROM ubuntu:14.04
 
 MAINTAINER Komey <lmh5257@live.cn>
 
@@ -10,5 +10,5 @@ RUN unzip emqttd.zip  -d /home/file/ && cp -f /home/file/emqttd.config  /home/fi
 
 EXPOSE 1883 8883 8083 18083 
 
-ENTRYPOINT ["/home/file/run.sh"]
-CMD /home/file/emqttd/bin/emqttd console
+CMD ["/home/file/run.sh"]
+

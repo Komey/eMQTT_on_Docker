@@ -23,8 +23,4 @@ fi
 
 echo "eMQTT Broker Starting"
 
-
-./home/file/emqttd/bin/emqttd console
-
-/usr/bin/supervisord
 exec /usr/sbin/sshd -D

@@ -10,5 +10,5 @@ RUN unzip emqttd.zip  -d /home/file/ && cp -f /home/file/emqttd.config  /home/fi
 
 EXPOSE 1883 8883 8083 18083 
 
-CMD ["/home/file/run.sh"]
+CMD /home/file/emqttd/bin/emqttd console
 
